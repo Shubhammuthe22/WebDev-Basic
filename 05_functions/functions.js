@@ -8,6 +8,7 @@ function teaOrder(typeOfTea) {
     // Once the 'return' is triggered no piece of code inside the function gets executed.
     console.log("Hello ChaiWorld");
 }
+// this is demo
 
 let greet = teaOrder("lemon Tea")
 // 'Lemon Tea' here is the 'argument' that we are passing to the function.
