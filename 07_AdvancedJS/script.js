@@ -11,4 +11,4 @@ console.log(document.getElementsByTagName("h2"));
 // -Validator
 
 // DOM(Document Object Model):-
-// -
+// -It is used mainly to manage the content and structure of a webpage.
