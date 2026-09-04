@@ -8,6 +8,7 @@
         body{
             background-color: #1a1a1a;
             text-align: center;
+            color: aliceblue;
         }
         p{
             color: aliceblue;
@@ -17,6 +18,10 @@
         }
         h2{
             color: aliceblue;
+        }
+        .highlight{
+            background-color: aqua;
+            color: #1a1a1a;
         }
     </style>
    
@@ -31,6 +36,27 @@
         </p>
         <button id="changeText">Change Text</button>
     </section>
+
+    <!-- This is example-2 -->
+     <section id="example-2">
+        <h2>Traversing through DOM</h2>
+        <ul id="citiesList">
+            <li class ="Demo">New York</li>
+            <li>London</li>
+            <li>Tokyo</li>
+            <li>Paris</li>
+        </ul>
+        <button id="highlightButton">Change First City</button>
+     </section>
+
+     <!-- Example-3 -->
+     <section id="example-3">
+        <h2>Manipulating DOM elements.</h2>
+        <div id="coffeeOrder">Order:
+            <span id="coffeetype">Latte</span>
+        </div>
+        <button id="changeOrder">Change to Espresso</button>
+     </section>
  <script src="./script.js"></script>
 </body>
 </html>
