@@ -29,3 +29,22 @@ document
     coffeetype.style.padding = '5px';
     
 });
+
+// Example 4:
+document
+.getElementById("addItem")
+.addEventListener("click",function () {
+    let newItem = document.createElement("li");
+    newItem.textContent = "Sugar";
+
+    document.getElementById("shoppingList").appendChild(newItem);
+    // Here first we are giving the reference of the 'shpppingList' and then grabbing the element.
+});
+
+// Example-5
+document
+.getElementById("removeElement")
+.addEventListener('click',function (){
+    let taskList = document.getElementById("taskList");
+    taskList.lastElementChild.remove();
+});
