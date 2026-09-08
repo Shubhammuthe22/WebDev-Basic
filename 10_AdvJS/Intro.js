@@ -12,7 +12,7 @@ for (let index = 0; index < 10; index++) {
 
 setTimeout(() => {
     Intro();
-}, 3000);
+}, 3000); //This time is in ms(1000 = 1s delay)
 
 // -Execution of the code is not sequential in the above example.
 // -This nature or the property of the is called Asynchronous nature.
