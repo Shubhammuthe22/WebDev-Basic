@@ -10,12 +10,12 @@ async function getData() {
     console.log("Fetching User Data...");
     try {
         const userdata = await fetchData();
+        // await is used to execute the code block in delay interval
+        console.log("User Data:" , userdata);
         console.log("Data Fetched Successfully!");
         
-        console.log("User Data:" , userdata);
-        
-        
-    } catch (error) {
+        // If the promise rejects then the catch block will get execute.
+     } catch (error) {
         console.log("Error Fetching Data",error);
         
     }
