@@ -15,6 +15,6 @@ console.log(gen.next().value);
 console.log(gen.next().value);
 console.log(gen.next().value);
 
-console.log(gen.next().value);
+// console.log(gen.next().value);
 // If we try to execute it more than its limit it shows undefind as it exceeds the boundary.
 console.log(GenTwo.next().value);
