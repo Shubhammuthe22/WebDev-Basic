@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox maserclass</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: #f2f0f0;
+            margin: 0;
+            padding:15px;
+            
+        }
+        h1,h2{
+            color: #441b1b;
+        }
+        .container{
+            margin-bottom: 15px;
+            padding: 15px;
+            /* height: 200px; */
+            /* width: 350px; */
+            border: 2px solid black;
+        }
+        .flex-container{
+            display: flex;
+            height: 200px;
+            margin-bottom: 10px;
+        }
+        .circle{
+            display: flex;
+            width: 50px;
+            height: 50px;
+            border-radius: 2px;
+            font-weight: bold;
+            align-items: center;
+            justify-content: center;
+            margin: 5px;
+            
+        }
+        .pastel-1{
+            background-color: #ffa7a7;
+        }
+        .pastel-2{
+            background-color: #9bc8f8;
+        }
+        .pastel-3{
+            background-color: #ffef62;
+        }
+        .pastel-4{
+            background-color: #dda8fe;
+        }
+        .pastel-5{
+            background-color: #fe99f6;
+        }
+        .pastel-6{
+            background-color: #999bf9;
+        }
+        .pastel-7{
+            background-color: #fe9d9d;
+        }
+        .pastel-8{
+            background-color: #abfe99;
+        }
+    </style>
+</head>
+<body>
+    <h1>Flexbox Masterclass Demo</h1>
+    <div class="container">
+        <h2>1.Default Flex</h2>
+        <div class="flex-container">
+            <div class="circle pastel-1">1</div>
+            <div class="circle pastel-2">2</div>
+            <div class="circle pastel-3">3</div>
+            <div class="circle pastel-4">4</div>
+            <div class="circle pastel-5">5</div>
+        </div>
+    </div>
+    <div class="container">
+        <h2>2.Flex direction-column</h2>
+        <div class="flex-container" 
+        style="flex-direction: column;">
+            <div class="circle pastel-1">1</div>
+            <div class="circle pastel-2">2</div>
+            <div class="circle pastel-3">3</div>
+            <div class="circle pastel-4">4</div>
+            <div class="circle pastel-5">5</div>
+        </div>
+    </div>
+    <div class="container">
+        <h2>3.Justify Content</h2>
+        <div class="flex-container"
+        style="justify-content: space-between;">
+            <div class="circle pastel-1">1</div>
+            <div class="circle pastel-2">2</div>
+            <div class="circle pastel-3">3</div>
+            <div class="circle pastel-4">4</div>
+            <div class="circle pastel-5">5</div>
+        </div>
+    </div>
+    <div class="container">
+        <h2>4.Align items</h2>
+        <div class="flex-container"
+        style="align-items: center;">
+            <div class="circle pastel-1">1</div>
+            <div class="circle pastel-2">2</div>
+            <div class="circle pastel-3">3</div>
+            <div class="circle pastel-4">4</div>
+            <div class="circle pastel-5">5</div>
+        </div>
+    </div>
+    <div class="container">
+        <h2>5.Flex Wrap:wrap</h2>
+        <div class="flex-container"
+        style="flex-wrap: wrap;">
+            <div class="circle pastel-1">1</div>
+            <div class="circle pastel-2">2</div>
+            <div class="circle pastel-3">3</div>
+            <div class="circle pastel-4">4</div>
+            <div class="circle pastel-5">5</div>
+            <div class="circle pastel-6">6</div>
+            <div class="circle pastel-7">7</div>
+            <div class="circle pastel-8">8</div>
+        </div>
+    </div>
+</body>
+</html>

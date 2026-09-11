@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Twitter Style navbar</title>
+    <style>
+        body{
+            background-color: #1c1c1c;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        h2{
+            color: aliceblue;
+        }
+        .nav2{
+            width: 200px;
+            background-color: #fc76cf;
+            padding: 10px;
+            margin: 0;
+        }
+        .nav2 ul{
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+        .nav2 li{
+            margin-bottom: 10px;
+        }
+        .nav2 a{
+            color: aliceblue;
+            text-decoration: none;
+            display: block;
+            padding: 10px;
+            
+        }
+        .nav2 a:hover{
+            background-color: #f50ea8;
+            
+        } 
+        .nav2 .login-button{
+          padding: 8px;  
+          width: 100%;
+          cursor: pointer;
+          background-color: #d95cfb;
+          border: none;
+          color: #fff;
+          border-radius: 4px;
+        }
+        .nav2 .login-button:hover{
+            background-color: #b42fd9;
+            border: 1px solid #fff;
+        }
+        
+        /* For the dropdown navbar content */
+        .nav3{
+            background-color: #5ab9fc;
+            padding: 10px;
+            
+        }
+        .nav3 ul{
+            list-style-type: none;
+            display: flex;
+            justify-content: space-around;
+            margin: 0;
+            padding: 0;
+            align-items: center;
+        }
+        
+        .nav3 a{
+            color: rgb(1, 42, 78);
+            text-decoration: none;
+            padding: 10px;
+            display: block;
+            cursor: pointer;
+        }
+        .nav3 a:hover{
+            background-color: #b4daf6;
+            border-radius: 5px;
+            padding: 10px;
+        }
+        .nav3 .dropdown-content{
+            display: none;
+        }
+        .nav3 .dropdown:hover .dropdown-content{
+            display: block;
+            position: absolute;
+            background-color: #5ab9fc;
+            min-width: 120px;
+        }
+        .nav3 .login-button{
+            padding: 6px;
+            background-color: #fff;
+            border: none;
+            border-radius: 6px;
+            cursor: pointer;
+        }
+        .nav3 .login-button:hover{
+            background-color: #027bf4;
+        }
+    </style>
+</head>
+<body>
+    <div class="nav-container">
+    <h2>Vertical navbar with hover effect</h2>
+    <nav class="nav2">
+        <ul>
+            <li> <a href="#">Home</a></li>
+            <li> <a href="#">About</a></li>
+            <li> <a href="#">Products</a></li>
+        </ul>
+        <li><button class="login-button">Login</button></li>
+        
+    </nav>
+    </div>
+    <div class="nav-container">
+    <h2>Horizontal with dropdown</h2>
+    <nav class="nav3">
+        <ul>
+            <li> <a href="#">Home</a></li>
+            <li class="dropdown"><a href="#">About</a>
+            <div class="dropdown-content">       
+                    <a href="#">Contact Us</a>
+                    <a href="#">Email</a>
+                    <a href="#">Address</a>
+                
+             </div>  <!-- this div is a block level element -->
+            </li>
+
+            <li> <a href="#">Products</a></li>
+            <li><button class="login-button">Login</button></li>
+        </ul>
+        
+    </nav>
+    </div>
+</body>
+</html>

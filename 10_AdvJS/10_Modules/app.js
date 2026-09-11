@@ -1,7 +1,7 @@
 // Module Import file:-
 // Modules:-
-// -Modules are used to import and export the functions,variables or any part of the program,
-// from one file to another by importing and exporting ImageTrack. 
+// -Modules are used to split the code into smaller parts and files, and to import and export the functions,
+// variables or any part of the program, from one file to another.  
 
 
 // default import

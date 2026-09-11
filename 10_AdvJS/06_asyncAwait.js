@@ -11,6 +11,7 @@ async function getData() {
     try {
         const userdata = await fetchData();
         // await is used to execute the code block in delay interval
+        // -await pauses the execution of the function until the promise is resolved.
         console.log("User Data:" , userdata);
         console.log("Data Fetched Successfully!");
         

@@ -24,7 +24,7 @@ async function getBlogData(){
 
         const [postData , commentData] = await Promise.all([fetchPostData(),fetchCommentData() ]);
         // Promise.all() accepts data as the array elements.
-        // this is the better synntax to fetched data from multiple blocks at a time.
+        // this is the better syntax to fetched data from multiple blocks at a time.
 
         console.log(postData);
         console.log(commentData);
