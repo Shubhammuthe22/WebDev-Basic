@@ -17,10 +17,11 @@ addTask.addEventListener('click' , () => {
     const newTask = {
         id:Date.now(),
         value: taskText,
-        status : false
+        completed : false
 
     }
     tasks.push(newTask);
+    renderTask(newTask);
     saveTask();
 
     toDOInput.value = ""; //clear input value.
@@ -32,8 +33,28 @@ addTask.addEventListener('click' , () => {
         //renderTask() should render/display the task in HTML.
         //It is also used to loop through the array for each task,
         //  and call the method each time for each task.
-        console.log(task);
-        
+        const li = document.createElement("li");
+        li.setAttribute('data-id',task.id);
+        if(task.completed) li.classList.add('completed')
+        li.innerHTML = `
+        <span> ${task.value} </span>
+        <button> delete </button>`;
+
+        li.addEventListener('click', (e) =>{
+            if(e.target.tagName === 'BUTTON') return;
+            task.completed = !task.completed;
+            li.classList.toggle("completed");
+            saveTask();
+        });
+
+        li.querySelector('button').addEventListener('click', (e) =>{
+            e.stopPropagation(); //Stops toggle from Firing
+            tasks = tasks.filter((t) => t.id != task.id )
+            // tasks.remove();
+            li.remove();
+            saveTask();
+        })
+        toDoList.appendChild(li);
     }
     
     function saveTask (){
