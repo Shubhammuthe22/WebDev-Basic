@@ -50,7 +50,7 @@ const removeTask = (argument) => {
     if(index >= 0 && index < tasks.length){
         tasks.splice(index , 1);
         //This method removes 1 value at aprticular index.
-        console.log(`Task No ${index} removed`);
+        console.log(`Task No ${index + 1} removed`);
         
         saveTask(tasks);
     }
