@@ -1,0 +1,27 @@
+{
+  "name": "webdevpro",
+  "version": "1.0.0",
+  "description": "A project Management Application for Beginners.",
+  "keywords": [
+    "Backend",
+    "API",
+    "Creation",
+    "npm"
+  ],
+  "homepage": "https://github.com/Shubhammuthe22/WebDev-Basic#readme",
+  "bugs": {
+    "url": "https://github.com/Shubhammuthe22/WebDev-Basic/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Shubhammuthe22/WebDev-Basic.git"
+  },
+  "license": "ISC",
+  "author": "Shubham Muthe",
+  "type": "module",
+
+  "main": "index.js",
+  "scripts": {
+    "dev": "node index.js"
+  }
+}
